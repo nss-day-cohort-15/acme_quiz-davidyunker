@@ -26,17 +26,12 @@ For example for fairy sparklers it should display: Fairy sparklers Product type:
 
 </head>
 <body>
-  <h1>Hello world!</h1>
-  <div class="dropdown open">
-    <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-      Dropdown button
-    </button>
-    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-      <a class="dropdown-item default" href="#">Select a category</a>
-      <a class="dropdown-item fireworks" href="#">Fireworks</a>
-      <a class="dropdown-item demolition" href="#">Demolition</a>
-    </div>
-  </div>
+<select class="custom-select">
+  <option selected>Pick your ACME</option>
+  <option value="1">Fireworks</option>
+  <option value="2">Demolition</option>
+</select>
+</div>
 
 <script src="/bower_components/jquery/dist/jquery.js"></script>
 <script src="quiz.js"></script>
