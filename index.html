@@ -26,12 +26,16 @@ For example for fairy sparklers it should display: Fairy sparklers Product type:
 
 </head>
 <body>
-<select class="custom-select">
-  <option selected>Pick your ACME</option>
-  <option value="1">Fireworks</option>
-  <option value="2">Demolition</option>
-</select>
-</div>
+  <select class="custom-select">
+    <option selected>Pick your ACME</option>
+    <option value="1" id="fireworks">Fireworks</option>
+    <option value="2" id="demolition">Demolition</option>
+  </select>
+    <div id="fireworks">
+    </div>
+    <div id="demoliton">
+    </div>
+
 
 <script src="/bower_components/jquery/dist/jquery.js"></script>
 <script src="quiz.js"></script>

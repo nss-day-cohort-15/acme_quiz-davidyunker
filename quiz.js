@@ -14,6 +14,32 @@ $(document).ready(function() {
   //     console.log(products)
   //   })
 
+// notes from last quiz
+
+// `<div class="col-md-3 col-md-offset-1></div>`
+
+
+// ${cars.color}
+
+$( ".custom-select" ).change(function(whichOne) {
+  console.log(whichOne.target.value)
+  if (whichOne.target.value === 1) {
+    // add fireworks content
+
+  }
+
+  else {
+    // add demolition content
+  }
+
+
+
+  // 1 = fireworks
+  // 2 = demolition
+  // $(".whichOne").html(`<div class="col-md-3 col-md-offset-1>Here's my div</div>`)
+
+  alert( "Handler for .change() called." );
+});
 
 // if you need both sets of data you will need to cache the first dataset
 
