@@ -1,0 +1,168 @@
+
+
+{
+    "products": [
+      {
+        "fairy_sparklers": {
+            "id": 0,
+            "type": 0,
+            "name": "Fairy Sparklers",
+            "description": "Multi-colored sparklers that are safe for any age."
+        }
+    },
+
+      {
+        "bottle_rockets": {
+            "id": 1,
+            "type": 0,
+            "name": "Bottle rockets",
+            "description": "Often used by teenagers and a good way to end up at the ER"
+        }
+    },
+
+      {
+        "snaps": {
+            "id": 2,
+            "type": 0,
+            "name": "Snaps",
+            "description": "Mostly harmless fireworks that really get it popping"
+        }
+    },
+
+
+      {
+        "willow": {
+            "id": 3,
+            "type": 1,
+            "name": "Willow",
+            "description": "Bigger fireworks than you would expect."
+        }
+    },
+
+      {
+        "comet": {
+            "id": 4,
+            "type": 1,
+            "name": "Comet",
+            "description": "The prettiest of professional fireworks."
+        }
+    },
+
+    {
+        "crosette": {
+            "id": 5,
+            "type": 1,
+            "name": "Crosette",
+            "description": "These fireworks are pretty great."
+        }
+    },
+
+     {
+        "bombs": {
+            "id": 6,
+            "type": 2,
+            "name": "Bombs",
+            "description": "These are pretty dangerous."
+        }
+    },
+
+     {
+        "real_rocket": {
+            "id": 7,
+            "type": 2,
+            "name": "Real rocket",
+            "description": "These are different from bottle rockets."
+        }
+    },
+
+     {
+        "mushroom": {
+            "id": 8,
+            "type": 2,
+            "name": "Mushroom",
+            "description": "If you see these in action it will probabaly be the last time."
+        }
+    },
+
+     {
+        "maim": {
+            "id": 9,
+            "type": 3,
+            "name": "Maim",
+            "description": "The name says it all."
+        }
+    },
+
+     {
+        "mailbox": {
+            "id": 10,
+            "type": 3,
+            "name": "Mailbox",
+            "description": "A great way to destroy your mailbox."
+        }
+    },
+
+     {
+        "gnome": {
+            "id": 11,
+            "type": 3,
+            "name": "Crosette",
+            "description": "A solution for pesky garden gnomes."
+        }
+    },
+
+    {
+        "amputate": {
+            "id": 12,
+            "type": 4,
+            "name": "Amuptate",
+            "description": "The name says it all."
+        }
+    },
+
+    {
+        "shed": {
+            "id": 13,
+            "type": 4,
+            "name": "Shed",
+            "description": "Get rid of your shed in one demolition.."
+        }
+    },
+
+    {
+        "yardwork": {
+            "id": 14,
+            "type": 4,
+            "name": "Yardwork",
+            "description": "Much faster than actual yardwork."
+        }
+    },
+
+    {
+        "obliterate": {
+            "id": 15,
+            "type": 5,
+            "name": "Obliterate",
+            "description": "Take out so much with just one."
+        }
+    },
+
+    {
+        "building": {
+            "id": 16,
+            "type": 5,
+            "name": "Building",
+            "description": "Take down a whole building."
+        }
+    },
+
+    {
+        "block": {
+            "id": 17,
+            "type": 5,
+            "name": "Block",
+            "description": "Take out a whole city block."
+        }
+    }
+  ]
+}
