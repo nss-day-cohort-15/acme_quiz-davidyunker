@@ -2,7 +2,6 @@
 
 var Acme = (function(acme) {
 
-// $(document).ready(function() {
 
 
     var categories
@@ -10,8 +9,6 @@ var Acme = (function(acme) {
     var products
 
   acme.getSelection = function (categories, types, products) {
-
-        // var yourChoice = $("#yourChoice").val()
 
         $( ".custom-select" ).change(function(yourChoice) {
         console.log(yourChoice.target.value)
@@ -38,23 +35,10 @@ var Acme = (function(acme) {
       $.getJSON('products.json')
     ])
       .then(function (data) {
-        console.log(data[0])
-        console.log(data[1])
-        console.log(data[2])
+
         categories = data[0].categories
         types = data[1].types
         products = data[2].products
-        console.log(categories)
-        console.log(types)
-        console.log(products)
-
-        for (var key in categories)
-        console.log(categories[key].name)
-
-        for (var key in types)
-        console.log(types[key].name)
-
-
 
 
 
