@@ -55,13 +55,13 @@ var Acme = (function(acme) {
         //   }
         // }
 
-        products.forEach (function (productObj) {
-          for (var obj in productObj) {
-            console.log(productObj[obj].type)
-            console.log(productObj[obj])
-          }
+        // products.forEach (function (productObj) {
+        //   for (var obj in productObj) {
+        //     console.log(productObj[obj].type)
+        //     console.log(productObj[obj])
+        //   }
 
-        })
+        // })
 
         // products.forEach(function(product) {
         //   console.log(product[product].type)

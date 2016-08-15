@@ -26,7 +26,7 @@ acme.fireworksChoice = function (categories, types, products) {
 
 
 acme.demolitionChoice = function (categories, types, products) {
-    var demolitonList = []
+    var demolitionList = []
 
      $('#yourProducts').html("")
 
@@ -34,14 +34,14 @@ acme.demolitionChoice = function (categories, types, products) {
           for (var obj in productObj) {
             console.log(productObj[obj].type)
           }
-        if (productObj[obj].type > 2) {
+        if (productObj[obj].type >= 3) {
             demolitionList.push(productObj[obj])
         }
 
         })
 
 
-    Acme.addProducts(categories, types, demolitonList)
+    Acme.addProducts(categories, types, demolitionList)
 }
 
 
