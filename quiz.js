@@ -73,36 +73,3 @@ Acme.getData();
 
 
 
-
-// works but not really
-
-
-// $(document).ready(function() {
-
-
-
-// $( ".custom-select" ).change(function(whichOne) {
-//   console.log(whichOne.target.value)
-//  })
-
-
-// var _catList
-// var _typeList
-// $.getJSON('categories.json')
-//   .then(function (catList) {
-//     _catList = catList // cache the data
-//     return $.getJSON('types.json')
-//   })
-//   .then(function (typeList) {
-//     _typeList = typeList
-//     return $.getJSON('products.json')
-//   })
-//   .then(function (productsList){
-//     console.log(productsList)
-//     console.log(_typeList)
-//     console.log(_catList)
-//     console.log(productsList)
-
-//   })
-
-// })
