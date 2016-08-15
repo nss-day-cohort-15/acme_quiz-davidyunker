@@ -59,6 +59,7 @@ var Acme = (function(acme) {
 })(Acme || {})
 
 Acme.getData();
+Acme.getSelection();
 
 
 
