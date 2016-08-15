@@ -53,7 +53,8 @@ acme.addProducts = function(categories, types, selectedProducts) {
         yourProducts.html(" ")
 
         selectedProducts.forEach( function (product) {
-            yourProducts.append( `<div class="col-md-3 col-md-offset-1" <h1> ${product.name} </h1> <p>${product.description}</p></div>`)
+            yourProducts.append( `<div class="col-md-3 col-md-offset-1" <h1> ${product.name} </h1> <p>${product.description}</p> <p>This is the ${types[product.type].name} type of the
+                ${categories[types[product.type].category].name} category</p></div>`)
         })
 }
 
