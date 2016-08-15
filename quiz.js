@@ -47,7 +47,31 @@ var Acme = (function(acme) {
         console.log(categories)
         console.log(types)
         console.log(products)
-        acme.getSelection(categories, types, products)
+
+        // for (var product in products) {
+        //   console.log(product)
+        //   for (var item in product) {
+        //      console.log(item.object)
+        //   }
+        // }
+
+        products.forEach (function (productObj) {
+          for (var obj in productObj) {
+            console.log(productObj[obj].type)
+            console.log(productObj[obj])
+          }
+
+        })
+
+        // products.forEach(function(product) {
+        //   console.log(product[product].type)
+        // });
+
+        // for (key in products) {
+        //   products[key].type
+        //   console.log(products[key].type)
+        // }
+        Acme.getSelection(categories, types, products)
       })
     }
 
@@ -59,7 +83,7 @@ var Acme = (function(acme) {
 })(Acme || {})
 
 Acme.getData();
-Acme.getSelection();
+
 
 
 
