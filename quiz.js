@@ -1,64 +1,96 @@
-$(document).ready(function() {
 
-//first try
-  // $.getJSON("categories.json")
-  //   .then(function(categories) {
-  //     $.getJSON("types.json")
+
+var Acme = (function(acme) {
+
+// $(document).ready(function() {
+
+
+    var categories
+    var types
+    var products
+
+  acme.getSelection = function (categories, types, products) {
+
+        // var yourChoice = $("#yourChoice").val()
+
+        $( ".custom-select" ).change(function(yourChoice) {
+        console.log(yourChoice.target.value)
+
+        var yourChoice = yourChoice.target.value
+        console.log(yourChoice)
+
+        if (yourChoice === "fireworks") {
+            Acme.fireworksChoice(categories, types, products)
+        }
+        if (yourChoice === "demolition") {
+            Acme.demolitionChoice(categories, types, products)
+        }
+    })
+  }
+
+
+
+   acme.getData = function () {
+
+    Promise.all([
+      $.getJSON('categories.json'),
+      $.getJSON('types.json'),
+      $.getJSON('products.json')
+    ])
+      .then(function (data) {
+        console.log(data[0])
+        console.log(data[1])
+        console.log(data[2])
+        categories = data[0].categories
+        types = data[1].types
+        products = data[2].products
+        console.log(categories)
+        console.log(types)
+        console.log(products)
+        acme.getSelection(categories, types, products)
+      })
+    }
+
+    return acme
+
   // })
-  //   .then(function(types){
-  //     $.getJSON("products.json")
-  //   })
-  //   .then(function(products) {
-  //     console.log(categories)
-  //     console.log(types)
-  //     console.log(products)
-  //   })
-
-// notes from last quiz
-
-// `<div class="col-md-3 col-md-offset-1></div>`
 
 
-// ${cars.color}
+})(Acme || {})
 
-$( ".custom-select" ).change(function(whichOne) {
-  console.log(whichOne.target.value)
-  if (whichOne.target.value === 1) {
-    // add fireworks content
-
-  }
-
-  else {
-    // add demolition content
-  }
+Acme.getData();
 
 
 
-  // 1 = fireworks
-  // 2 = demolition
-  // $(".whichOne").html(`<div class="col-md-3 col-md-offset-1>Here's my div</div>`)
+// works but not really
 
-  alert( "Handler for .change() called." );
-});
 
-// if you need both sets of data you will need to cache the first dataset
+// $(document).ready(function() {
 
-var _catList // create a state variable to hold the data
-var _typeList
-$.getJSON('categories.json')
-  .then(function (catList) {
-    _catList = catList // cache the data
-    return $.getJSON('types.json')
-  })
-  .then(function (typeList) {
-    _typeList = typeList
-    return $.getJSON('products.json')
-  })
-  .then(function (productsList){
-    console.log(productsList)
-    console.log(_typeList)
-    console.log(_catList)
 
-  })
 
-})
+// $( ".custom-select" ).change(function(whichOne) {
+//   console.log(whichOne.target.value)
+//  })
+
+
+// var _catList
+// var _typeList
+// $.getJSON('categories.json')
+//   .then(function (catList) {
+//     _catList = catList // cache the data
+//     return $.getJSON('types.json')
+//   })
+//   .then(function (typeList) {
+//     _typeList = typeList
+//     return $.getJSON('products.json')
+//   })
+//   .then(function (productsList){
+//     console.log(productsList)
+//     console.log(_typeList)
+//     console.log(_catList)
+//     console.log(productsList)
+
+//   })
+
+// })
